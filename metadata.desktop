@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Ultrawide Windows
+Comment=Move windows in useful positions in a ultrawide monitor
+Icon=preferences-system-windows-script-test
+
+X-Plasma-API=javascript
+X-Plasma-MainScript=code/main.js
+
+X-KDE-PluginInfo-Author=Luca Moschella
+X-KDE-PluginInfo-Email=nopaste94@gmail.com
+X-KDE-PluginInfo-Name=ultrawidewindows
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-EnabledByDefault=true
+
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-ServiceTypes=KWin/Script
+Type=Service
