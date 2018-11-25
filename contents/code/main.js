@@ -1,4 +1,4 @@
-registerShortcut("MoveWindowToUpLeft", "Move Window to Up Left", "Meta+Num+7", function () {
+registerShortcut("MoveWindowToUpLeft", "UltrawideWindows: Move Window to Up Left", "Meta+KP7", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -15,7 +15,7 @@ registerShortcut("MoveWindowToUpLeft", "Move Window to Up Left", "Meta+Num+7", f
     }
 });
 
-registerShortcut("MoveWindowToUpCenter", "Move Window to Up Center", "Meta+Num+8", function () {
+registerShortcut("MoveWindowToUpCenter", "UltrawideWindows: Move Window to Up Center", "Meta+KP8", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -32,7 +32,7 @@ registerShortcut("MoveWindowToUpCenter", "Move Window to Up Center", "Meta+Num+8
     }
 });
 
-registerShortcut("MoveWindowToUpRight", "Move Window to Up Right", "Meta+Num+9", function () {
+registerShortcut("MoveWindowToUpRight", "UltrawideWindows: Move Window to Up Right", "Meta+KP9", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -49,7 +49,7 @@ registerShortcut("MoveWindowToUpRight", "Move Window to Up Right", "Meta+Num+9",
     }
 });
 
-registerShortcut("MoveWindowToDownLeft", "Move Window to Down Left", "Meta+Num+1", function () {
+registerShortcut("MoveWindowToDownLeft", "UltrawideWindows: Move Window to Down Left", "Meta+KP1", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -66,7 +66,7 @@ registerShortcut("MoveWindowToDownLeft", "Move Window to Down Left", "Meta+Num+1
     }
 });
 
-registerShortcut("MoveWindowToDownCenter", "Move Window to Down Center", "Meta+Num+2", function () {
+registerShortcut("MoveWindowToDownCenter", "UltrawideWindows: Move Window to Down Center", "Meta+KP2", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -83,7 +83,7 @@ registerShortcut("MoveWindowToDownCenter", "Move Window to Down Center", "Meta+N
     }
 });
 
-registerShortcut("MoveWindowToDownRight", "Move Window to Down Right", "Meta+Num+3", function () {
+registerShortcut("MoveWindowToDownRight", "UltrawideWindows: Move Window to Down Right", "Meta+KP3", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -100,7 +100,7 @@ registerShortcut("MoveWindowToDownRight", "Move Window to Down Right", "Meta+Num
     }
 });
 
-registerShortcut("MoveWindowToLeft", "Move Window to Left", "Meta+Num+4", function () {
+registerShortcut("MoveWindowToLeft", "UltrawideWindows: Move Window to Left", "Meta+KP4", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -117,7 +117,7 @@ registerShortcut("MoveWindowToLeft", "Move Window to Left", "Meta+Num+4", functi
     }
 });
 
-registerShortcut("MoveWindowToCenter", "Move Window to Center", "Meta+Num+5", function () {
+registerShortcut("MoveWindowToCenter", "UltrawideWindows: Move Window to Center", "Meta+KP5", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
@@ -134,7 +134,7 @@ registerShortcut("MoveWindowToCenter", "Move Window to Center", "Meta+Num+5", fu
     }
 });
 
-registerShortcut("MoveWindowToRight", "Move Window to Right", "Meta+Num+6", function () {
+registerShortcut("MoveWindowToRight", "UltrawideWindows: Move Window to Right", "Meta+KP6", function () {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
