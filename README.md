@@ -39,6 +39,7 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to down-right (2x2)</kbd>   |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>            |
 
 | Shortcuts                                              | Commands to fit 2/3 of the width                                       |
 | ------------------------------------------------------ | ---------------------------------------------------------------------- |
@@ -48,6 +49,9 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to fit down-right 2/3 width</kbd>   |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to fit left-height 2/3 width</kbd>  |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 2/3 width</kbd> |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width</kbd>                   |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>           |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>                    |
 
 | Shortcuts                                             | General commands                             |
 | ----------------------------------------------------- | -------------------------------------------- |
@@ -55,8 +59,8 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window</kbd> |
 
 ##### Notes
-The standard behaviour of going to the previous position if the window is already in the correct position causes conflicts since I do not know how to the framework works.
-Using only `Ultrawide` shortcuts, even for 2x2 movements and to maximize the window, avoids these conflicts. However:
+The standard behaviour of going to the previous position if the window is already in the correct position causes conflicts.
+Using only `Ultrawide` shortcuts, avoids these conflicts. However:
 * The animations are lost.
 * If maximized, a window does not go back to the previous position when maximizing it again. If for you it is a must-have, the default `maximize` doesn't work so bad.
 
