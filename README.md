@@ -29,21 +29,26 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Numpad5</kbd> | <kbd>Ultrawide: Move Window to center-height (3x2)</kbd> |
 | <kbd>Meta</kbd> + <kbd>Numpad6</kbd> | <kbd>Ultrawide: Move Window to right-height (3x2)</kbd>  |
 
-| Shortcuts                                             | Commands in 2x2 grid                 |
-| ----------------------------------------------------- | ------------------------------------ |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad7</kbd> | <kbd>Move Window to Up Left</kbd>    |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad8</kbd> | <kbd>Move Window Up</kbd>            |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad9</kbd> | <kbd>Move Window to Up Right</kbd>   |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad1</kbd> | <kbd>Move Window to Down Left</kbd>  |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad2</kbd> | <kbd>Move Window to Down</kbd>       |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad3</kbd> | <kbd>Move Window to Down Right</kbd> |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>Move Window to Left</kbd>       |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>Move Window to Right</kbd>      |
+| Shortcuts                                             | Commands in 2x2 grid                                           |
+| ----------------------------------------------------- | -------------------------------------------------------------- |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to up-left (2x2)</kbd>      |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (2x2)</kbd>     |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to up-right (2x2)</kbd>     |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to down-left (2x2)</kbd>    |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>   |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to down-right (2x2)</kbd>   |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
 
 | Shortcuts                                             | General commands           |
 | ----------------------------------------------------- | -------------------------- |
 | <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                  | <kbd>Maximize window</kbd> |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad5</kbd> | <kbd>Maximize window</kbd> |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd> | <kbd>Maximize window</kbd> |
+
+##### Notes
+* Using only `Ultrawide` shortcuts, even for 2x2 movements, avoids conflicts. They are caused by the standard behaviour of going to the previous position if the window is already in the correct position. I found that the only default one useful is the `maximize windows`, that even if it may work unexpectedly, is convenient to use. If the unexpected bothers you, there is a `Ultrawide` implementation, that doesn't have the _go to the previous position_ feature.
+* The animations are lost.
+* The default shortcuts works only if the combinations contains even the <kbd>ald</kbd> modifier, probably a KWin problem.
 
 # Update
 ```bash

@@ -25,7 +25,7 @@ function move(workspace, numberXslots, numberYslots, x, y) {
     }
 }
 
-
+// GRID 3x2
 registerShortcut("MoveWindowToUpLeft3x2", "UltrawideWindows: Move Window to up-left (3x2)", "Meta+Num+7", function () {
     move(workspace, 3, 2, 0, 0)
 });
@@ -60,4 +60,42 @@ registerShortcut("MoveWindowToCenterHeight3x2", "UltrawideWindows: Move Window t
 
 registerShortcut("MoveWindowToRightHeight3x2", "UltrawideWindows: Move Window to right-height (3x2)", "Meta+Num+6", function () {
     move(workspace, 3, 1, 2, 0)
+});
+
+// GRID 2x2
+registerShortcut("MoveWindowToUpLeft2x2", "UltrawideWindows: Move Window to up-left (2x2)", "Meta+alt+Num+7", function () {
+    move(workspace, 2, 2, 0, 0)
+});
+
+registerShortcut("MoveWindowToUpCenter2x2", "UltrawideWindows: Move Window to up-width (2x2)", "Meta+alt+Num+8", function () {
+    move(workspace, 1, 2, 0, 0)
+});
+
+registerShortcut("MoveWindowToUpRight2x2", "UltrawideWindows: Move Window to up-right (2x2)", "Meta+alt+Num+9", function () {
+    move(workspace, 2, 2, 1, 0)
+});
+
+registerShortcut("MoveWindowToDownLeft2x2", "UltrawideWindows: Move Window to down-left (2x2)", "Meta+alt+Num+1", function () {
+    move(workspace, 2, 2, 0, 1)
+});
+
+registerShortcut("MoveWindowToDownCenter2x2", "UltrawideWindows: Move Window to down-width (2x2)", "Meta+alt+Num+2", function () {
+    move(workspace, 1, 2, 0, 1)
+});
+
+registerShortcut("MoveWindowToDownRight2x2", "UltrawideWindows: Move Window to down-right (2x2)", "Meta+alt+Num+3", function () {
+    move(workspace, 2, 2, 1, 1)
+});
+
+registerShortcut("MoveWindowToLeftHeight2x2", "UltrawideWindows: Move Window to left-height (2x2)", "Meta+alt+Num+4", function () {
+    move(workspace, 2, 1, 0, 0)
+});
+
+registerShortcut("MoveWindowToRightHeight2x2", "UltrawideWindows: Move Window to right-height (2x2)", "Meta+alt+Num+6", function () {
+    move(workspace, 2, 1, 1, 0)
+});
+
+// General
+registerShortcut("MoveWindowToCenterHeight2x2", "UltrawideWindows: Maximize Window", "Meta+alt+Num+5", function () {
+    move(workspace, 1, 1, 0, 0)
 });
