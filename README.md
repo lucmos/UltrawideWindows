@@ -2,7 +2,7 @@
 Expose useful shortcuts to manage windows in a ultrawide monitor and, in general, in a high resolution monitor.
 This solution is intended to be an easy-to-use middleground between the default behaviour and the tiling approach.
 
-![Alt Text](/docs/preview.gif)
+![](/docs/preview.gif)
 
 # Installation
 
@@ -41,7 +41,7 @@ My suggestion is to use the following configuration:
 * <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> -> <kbd>Move Window to Right</kbd>
 
 
-* <kbd>Meta</kbd> + <kbd>Numpad0</kbd> -> `Maximize window`
+* <kbd>Meta</kbd> + <kbd>Numpad0</kbd> -> <kbd>Maximize window</kbd>
 
 
 # Remove
