@@ -2,9 +2,11 @@
 
 # Installation
 
-`$ git clone git@github.com:LucaMoschella/UltrawideWindows.git`
-`$ cd UltrawideWindows`
-`$ plasmapkg2 --type=kwinscript -i .`
+```
+$ git clone git@github.com:LucaMoschella/UltrawideWindows.git
+$ cd UltrawideWindows
+$ plasmapkg2 --type=kwinscript -i .
+```
 
 # Usage
 Set the desired shortcuts under `System Settings > Shortcuts > Global Shortcuts > KWin`.
