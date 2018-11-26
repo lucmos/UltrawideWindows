@@ -1,5 +1,5 @@
 #!/bin/sh
 
 plasmapkg2 --type=kwinscript -r .
-./release.sh
+zip -r movewindowtocenter.kwinscript contents/ LICENSE metadata.desktop
 plasmapkg2 --type=kwinscript -i .
