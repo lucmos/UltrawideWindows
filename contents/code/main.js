@@ -26,38 +26,38 @@ function move(workspace, numberXslots, numberYslots, x, y) {
 }
 
 
-registerShortcut("MoveWindowToUpLeft", "UltrawideWindows: Move Window  DEBUG to Up Left", "Meta+Num+7", function () {
+registerShortcut("MoveWindowToUpLeft3x2", "UltrawideWindows: Move Window to up-left (3x2)", "Meta+Num+7", function () {
     move(workspace, 3, 2, 0, 0)
 });
 
-registerShortcut("MoveWindowToUpCenter", "UltrawideWindows: Move Window  DEBUG to Up Center", "Meta+Num+8", function () {
+registerShortcut("MoveWindowToUpCenter3x2", "UltrawideWindows: Move Window to up-center (3x2)", "Meta+Num+8", function () {
     move(workspace, 3, 2, 1, 0)
 });
 
-registerShortcut("MoveWindowToUpRight", "UltrawideWindows: Move Window  DEBUG to Up Right", "Meta+Num+9", function () {
+registerShortcut("MoveWindowToUpRight3x2", "UltrawideWindows: Move Window to up-right (3x2)", "Meta+Num+9", function () {
     move(workspace, 3, 2, 2, 0)
 });
 
-registerShortcut("MoveWindowToDownLeft", "UltrawideWindows: Move Window  DEBUG to Down Left", "Meta+Num+1", function () {
+registerShortcut("MoveWindowToDownLeft3x2", "UltrawideWindows: Move Window to down-left (3x2)", "Meta+Num+1", function () {
     move(workspace, 3, 2, 0, 1)
 });
 
-registerShortcut("MoveWindowToDownCenter", "UltrawideWindows: Move Window  DEBUG to Down Center", "Meta+Num+2", function () {
+registerShortcut("MoveWindowToDownCenter3x2", "UltrawideWindows: Move Window to down-center (3x2)", "Meta+Num+2", function () {
     move(workspace, 3, 2, 1, 1)
 });
 
-registerShortcut("MoveWindowToDownRight", "UltrawideWindows: Move Window  DEBUG to Down Right", "Meta+Num+3", function () {
+registerShortcut("MoveWindowToDownRight3x2", "UltrawideWindows: Move Window to down-right (3x2)", "Meta+Num+3", function () {
     move(workspace, 3, 2, 2, 1)
 });
 
-registerShortcut("MoveWindowToLeft", "UltrawideWindows: Move Window  DEBUG to Left", "Meta+Num+4", function () {
+registerShortcut("MoveWindowToLeftHeight3x2", "UltrawideWindows: Move Window to left-height (3x2)", "Meta+Num+4", function () {
     move(workspace, 3, 1, 0, 0)
 });
 
-registerShortcut("MoveWindowToCenter", "UltrawideWindows: Move Window  DEBUG to Center", "Meta+Num+5", function () {
+registerShortcut("MoveWindowToCenterHeight3x2", "UltrawideWindows: Move Window to center-height (3x2)", "Meta+Num+5", function () {
     move(workspace, 3, 1, 1, 0)
 });
 
-registerShortcut("MoveWindowToRight", "UltrawideWindows: Move Window  DEBUG to Right", "Meta+Num+6", function () {
+registerShortcut("MoveWindowToRightHeight3x2", "UltrawideWindows: Move Window to right-height (3x2)", "Meta+Num+6", function () {
     move(workspace, 3, 1, 2, 0)
 });
