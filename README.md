@@ -40,10 +40,10 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
 
-| Shortcuts                                             | General commands           |
-| ----------------------------------------------------- | -------------------------- |
-| <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                  | <kbd>Maximize window</kbd> |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd> | <kbd>Maximize window</kbd> |
+| Shortcuts                                             | General commands                             |
+| ----------------------------------------------------- | -------------------------------------------- |
+| <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                  | <kbd>UltrawideWindows: Maximize Window</kbd> |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window</kbd> |
 
 ##### Notes
 The standard behaviour of going to the previous position if the window is already in the correct position causes conflicts since I do not know how to the framework works.
