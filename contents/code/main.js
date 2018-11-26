@@ -24,18 +24,18 @@ function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToF
     }
 }
 
-function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
-    var client = workspace.activeClient;
-    if (client.moveable) {
-        arr = getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
-        var newX = arr[0],
-            newY = arr[1],
-            w = arr[2],
-            h = arr[3];
-        return (client.x == newX && client.y == newY && client.width == w && client.height == h);
-    }
-    return false;
-}
+// function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
+//     var client = workspace.activeClient;
+//     if (client.moveable) {
+//         arr = getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
+//         var newX = arr[0],
+//             newY = arr[1],
+//             w = arr[2],
+//             h = arr[3];
+//         return (client.x == newX && client.y == newY && client.width == w && client.height == h);
+//     }
+//     return false;
+// }
 
 // GRID 3x2
 registerShortcut("MoveWindowToUpLeft3x2", "UltrawideWindows: Move Window to up-left (3x2)", "Meta+Num+7", function () {
@@ -134,13 +134,15 @@ registerShortcut("MoveWindowToRightHeight23", "UltrawideWindows: Move Window to 
 });
 
 // General
-registerShortcut("MoveWindowToCenterHeight2x2", "UltrawideWindows: Maximize Window", "Meta+alt+Num+5", function () {
+registerShortcut("MoveWindowToMaximize", "UltrawideWindows: Maximize Window", "Meta+alt+Num+5", function () {
     move(workspace, 1, 1, 0, 0, 1, 1)
 });
 
-registerShortcut("MoveWindowToCenterHeight2x2", "UltrawideWindows: Maximize Window (copy)", "Meta+alt+Num+0", function () {
+registerShortcut("MoveWindowToMaximize1", "UltrawideWindows: Maximize Window (copy)", "Meta+alt+Num+0", function () {
     move(workspace, 1, 1, 0, 0, 1, 1)
 });
 
-
+registerShortcut("MoveWindowToMaximize2", "UltrawideWindows: Maximize Window (copy2)", "Meta+ctrl+Num+0", function () {
+    move(workspace, 1, 1, 0, 0, 1, 1)
+});
 

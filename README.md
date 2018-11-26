@@ -39,7 +39,6 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to down-right (2x2)</kbd>   |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>            |
 
 | Shortcuts                                              | Commands to fit 2/3 of the width                                       |
 | ------------------------------------------------------ | ---------------------------------------------------------------------- |
@@ -51,12 +50,18 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 2/3 width</kbd> |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width</kbd>                   |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>           |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>                    |
 
-| Shortcuts                                             | General commands                             |
-| ----------------------------------------------------- | -------------------------------------------- |
-| <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                  | <kbd>UltrawideWindows: Maximize Window</kbd> |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window</kbd> |
+| Shortcuts                                              | General commands (easy to use)                       |
+| ------------------------------------------------------ | ---------------------------------------------------- |
+| <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                   | <kbd>UltrawideWindows: Maximize Window</kbd>         |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
+| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad5</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
+| <kbd>Meta</kbd> + <kbd>Ctrl</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
+| <kbd>Meta</kbd> + <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
+
+
+
+
 
 ##### Notes
 The standard behaviour of going to the previous position if the window is already in the correct position causes conflicts.
