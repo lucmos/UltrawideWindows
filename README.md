@@ -40,6 +40,15 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
 
+| Shortcuts                                              | Commands to fit 2/3 of the width                                       |
+| ------------------------------------------------------ | ---------------------------------------------------------------------- |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to fit up-left 2/3 width</kbd>      |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to fit down-left 2/3 width</kbd>    |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to fit up-right 2/3 width</kbd>     |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to fit down-right 2/3 width</kbd>   |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to fit left-height 2/3 width</kbd>  |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 2/3 width</kbd> |
+
 | Shortcuts                                             | General commands                             |
 | ----------------------------------------------------- | -------------------------------------------- |
 | <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                  | <kbd>UltrawideWindows: Maximize Window</kbd> |
