@@ -45,6 +45,12 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                  | <kbd>Maximize window</kbd> |
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad5</kbd> | <kbd>Maximize window</kbd> |
 
+# Update
+```bash
+$ cd UltrawideWindows
+$ ./scripts/update.sh
+```
+Then disable and re-enable the script.
 
 # Remove
 
