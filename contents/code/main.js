@@ -96,6 +96,6 @@ registerShortcut("MoveWindowToRightHeight2x2", "UltrawideWindows: Move Window to
 });
 
 // General
-registerShortcut("MoveWindowToCenterHeight2x2", "UltrawideWindows: Maximize Window", "Meta+alt+Num+5", function () {
+registerShortcut("MoveWindowToCenterHeight2x2", "UltrawideWindows: Maximize Window", "Meta+alt+Num+0", function () {
     move(workspace, 1, 1, 0, 0)
 });

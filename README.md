@@ -46,9 +46,11 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd> | <kbd>Maximize window</kbd> |
 
 ##### Notes
-* Using only `Ultrawide` shortcuts, even for 2x2 movements, avoids conflicts. They are caused by the standard behaviour of going to the previous position if the window is already in the correct position. I found that the only default one useful is the `maximize windows`, that even if it may work unexpectedly, is convenient to use. If the unexpected bothers you, there is a `Ultrawide` implementation, that doesn't have the _go to the previous position_ feature.
+The standard behaviour of going to the previous position if the window is already in the correct position causes conflicts since I do not know how to the framework works.
+Using only `Ultrawide` shortcuts, even for 2x2 movements and to maximize the window, avoids these conflicts. However:
 * The animations are lost.
-* The default shortcuts works only if the combinations contains even the <kbd>ald</kbd> modifier, probably a KWin problem.
+* If maximized, a window does not go back to the previous position when maximizing it again. If for you it is a must-have, the default `maximize` doesn't work so bad.
+
 
 # Update
 ```bash
