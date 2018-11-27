@@ -48,7 +48,7 @@ My suggestion is to use the following configuration:
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to fit down-right 2/3 width</kbd>   |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to fit left-height 2/3 width</kbd>  |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 2/3 width</kbd> |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width</kbd>                   |
+| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (2x2)</kbd>                   |
 | <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>           |
 
 | Shortcuts                                              | General commands (easy to use)                       |
