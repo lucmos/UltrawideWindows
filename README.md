@@ -31,33 +31,33 @@ My suggestion is to use the following configuration:
 
 | Shortcuts                                             | Commands in 2x2 grid                                           |
 | ----------------------------------------------------- | -------------------------------------------------------------- |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to up-left (2x2)</kbd>      |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (2x2)</kbd>     |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to up-right (2x2)</kbd>     |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to down-left (2x2)</kbd>    |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>   |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to down-right (2x2)</kbd>   |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
+| <kbd>Alt</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to up-left (2x2)</kbd>      |
+| <kbd>Alt</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (2x2)</kbd>     |
+| <kbd>Alt</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to up-right (2x2)</kbd>     |
+| <kbd>Alt</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to down-left (2x2)</kbd>    |
+| <kbd>Alt</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>   |
+| <kbd>Alt</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to down-right (2x2)</kbd>   |
+| <kbd>Alt</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
+| <kbd>Alt</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
 
 | Shortcuts                                              | Commands to fit 2/3 of the width                                       |
 | ------------------------------------------------------ | ---------------------------------------------------------------------- |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to fit up-left 2/3 width</kbd>      |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to fit down-left 2/3 width</kbd>    |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to fit up-right 2/3 width</kbd>     |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to fit down-right 2/3 width</kbd>   |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to fit left-height 2/3 width</kbd>  |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 2/3 width</kbd> |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (2x2)</kbd>                   |
-| <kbd>Meta</kbd> + <kbd>ctrl</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>           |
+| <kbd>ctrl</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to fit up-left 2/3 width</kbd>      |
+| <kbd>ctrl</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to fit down-left 2/3 width</kbd>    |
+| <kbd>ctrl</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to fit up-right 2/3 width</kbd>     |
+| <kbd>ctrl</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to fit down-right 2/3 width</kbd>   |
+| <kbd>ctrl</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to fit left-height 2/3 width</kbd>  |
+| <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 2/3 width</kbd> |
+| <kbd>ctrl</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (2x2)</kbd>                   |
+| <kbd>ctrl</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (2x2)</kbd>           |
 
 | Shortcuts                                              | General commands (easy to use)                       |
 | ------------------------------------------------------ | ---------------------------------------------------- |
 | <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                   | <kbd>UltrawideWindows: Maximize Window</kbd>         |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad0</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
-| <kbd>Meta</kbd> + <kbd>Alt</kbd> + <kbd>Numpad5</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
-| <kbd>Meta</kbd> + <kbd>Ctrl</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
-| <kbd>Meta</kbd> + <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
+| <kbd>Alt</kbd> + <kbd>Numpad0</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
+| <kbd>Alt</kbd> + <kbd>Numpad5</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
+| <kbd>Ctrl</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
+| <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
 
 
 
