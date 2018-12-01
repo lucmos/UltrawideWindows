@@ -2,6 +2,7 @@
 Expose useful shortcuts to manage windows in a ultrawide monitor and, in general, in a high resolution monitor.
 This solution is intended to be an easy-to-use middleground between the default behaviour and the tiling approach.
 
+![](/docs/preview2.gif)
 ![](/docs/preview.gif)
 
 # Installation
