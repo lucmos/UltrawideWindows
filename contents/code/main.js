@@ -88,60 +88,60 @@ registerShortcut("MoveWindowToRightHeight3x2", "UltrawideWindows: Move Window to
 
 // GRID 2x2
 
-registerShortcut("MoveWindowToUpLeft2x2", "UltrawideWindows: Move Window to up-left (2x2)", "alt+Num+7", function () {
+registerShortcut("MoveWindowToUpLeft2x2", "UltrawideWindows: Move Window to up-left (2x2)", "ctrl+Num+7", function () {
     move(workspace, 2, 2, 0, 0, 1, 1)
 });
 
-registerShortcut("MoveWindowToUpCenter2x2", "UltrawideWindows: Move Window to up-width (2x2)", "alt+Num+8", function () {
+registerShortcut("MoveWindowToUpCenter2x2", "UltrawideWindows: Move Window to up-width (2x2)", "ctrl+Num+8", function () {
     move(workspace, 1, 2, 0, 0, 1, 1)
 });
 
-registerShortcut("MoveWindowToUpRight2x2", "UltrawideWindows: Move Window to up-right (2x2)", "alt+Num+9", function () {
+registerShortcut("MoveWindowToUpRight2x2", "UltrawideWindows: Move Window to up-right (2x2)", "ctrl+Num+9", function () {
     move(workspace, 2, 2, 1, 0, 1, 1)
 });
 
-registerShortcut("MoveWindowToDownLeft2x2", "UltrawideWindows: Move Window to down-left (2x2)", "alt+Num+1", function () {
+registerShortcut("MoveWindowToDownLeft2x2", "UltrawideWindows: Move Window to down-left (2x2)", "ctrl+Num+1", function () {
     move(workspace, 2, 2, 0, 1, 1, 1)
 });
 
-registerShortcut("MoveWindowToDownCenter2x2", "UltrawideWindows: Move Window to down-width (2x2)", "alt+Num+2", function () {
+registerShortcut("MoveWindowToDownCenter2x2", "UltrawideWindows: Move Window to down-width (2x2)", "ctrl+Num+2", function () {
     move(workspace, 1, 2, 0, 1, 1, 1)
 });
 
-registerShortcut("MoveWindowToDownRight2x2", "UltrawideWindows: Move Window to down-right (2x2)", "alt+Num+3", function () {
+registerShortcut("MoveWindowToDownRight2x2", "UltrawideWindows: Move Window to down-right (2x2)", "ctrl+Num+3", function () {
     move(workspace, 2, 2, 1, 1, 1, 1)
 });
 
-registerShortcut("MoveWindowToLeftHeight2x2", "UltrawideWindows: Move Window to left-height (2x2)", "alt+Num+4", function () {
+registerShortcut("MoveWindowToLeftHeight2x2", "UltrawideWindows: Move Window to left-height (2x2)", "ctrl+Num+4", function () {
     move(workspace, 2, 1, 0, 0, 1, 1)
 });
 
-registerShortcut("MoveWindowToRightHeight2x2", "UltrawideWindows: Move Window to right-height (2x2)", "alt+Num+6", function () {
+registerShortcut("MoveWindowToRightHeight2x2", "UltrawideWindows: Move Window to right-height (2x2)", "ctrl+Num+6", function () {
     move(workspace, 2, 1, 1, 0, 1, 1)
 });
 
 // Fit 2/3 screen
-registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit up-left 2/3 width ", "ctrl+Num+7", function () {
+registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit up-left 2/3 width ", "alt+Num+7", function () {
     move(workspace, 3, 2, 0, 0, 2, 1)
 });
 
-registerShortcut("MoveWindowToFitDownLeft23", "UltrawideWindows: Move Window to fit down-left 2/3 width ", "ctrl+Num+1", function () {
+registerShortcut("MoveWindowToFitDownLeft23", "UltrawideWindows: Move Window to fit down-left 2/3 width ", "alt+Num+1", function () {
     move(workspace, 3, 2, 0, 1, 2, 1)
 });
 
-registerShortcut("MoveWindowToUpRight23", "UltrawideWindows: Move Window to fit up-right 2/3 width ", "ctrl+Num+9", function () {
+registerShortcut("MoveWindowToUpRight23", "UltrawideWindows: Move Window to fit up-right 2/3 width ", "alt+Num+9", function () {
     move(workspace, 3, 2, 1, 0, 2, 1)
 });
 
-registerShortcut("MoveWindowToFitDownRight23", "UltrawideWindows: Move Window to fit down-right 2/3 width ", "ctrl+Num+3", function () {
+registerShortcut("MoveWindowToFitDownRight23", "UltrawideWindows: Move Window to fit down-right 2/3 width ", "alt+Num+3", function () {
     move(workspace, 3, 2, 1, 1, 2, 1)
 });
 
-registerShortcut("MoveWindowToLeftHeight23", "UltrawideWindows: Move Window to fit left-height 2/3 width ", "ctrl+Num+4", function () {
+registerShortcut("MoveWindowToLeftHeight23", "UltrawideWindows: Move Window to fit left-height 2/3 width ", "alt+Num+4", function () {
     move(workspace, 3, 1, 0, 0, 2, 1)
 });
 
-registerShortcut("MoveWindowToRightHeight23", "UltrawideWindows: Move Window to fit right-height 2/3 width ", "ctrl+Num+6", function () {
+registerShortcut("MoveWindowToRightHeight23", "UltrawideWindows: Move Window to fit right-height 2/3 width ", "alt+Num+6", function () {
     move(workspace, 3, 1, 1, 0, 2, 1)
 });
 
