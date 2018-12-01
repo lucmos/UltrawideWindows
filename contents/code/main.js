@@ -1,4 +1,4 @@
-function getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
+function newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
     var width;
     if (x == numberXslots) {
@@ -22,7 +22,7 @@ function getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotT
 function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var client = workspace.activeClient;
     if (client.moveable) {
-        arr = getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
+        arr = newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
         var newX = arr[0],
             newY = arr[1],
             w = arr[2],
@@ -35,6 +35,22 @@ function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToF
         };
     }
 }
+
+function center(workspace) {
+    var client = workspace.activeClient;
+    if (client.moveable) {
+        var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
+        var newX = maxArea.x + ((maxArea.width - client.width) / 2);
+        var newY = maxArea.y + ((maxArea.height - client.height) / 2);
+        client.geometry = {
+            x: newX,
+            y: newY,
+            width: client.width,
+            height: client.height
+        };
+    }
+}
+
 
 // function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
 //     var client = workspace.activeClient;
@@ -125,12 +141,20 @@ registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit u
     move(workspace, 3, 2, 0, 0, 2, 1)
 });
 
-registerShortcut("MoveWindowToFitDownLeft23", "UltrawideWindows: Move Window to fit down-left 2/3 width ", "alt+Num+1", function () {
-    move(workspace, 3, 2, 0, 1, 2, 1)
+registerShortcut("MoveWindowToUpCenter23", "UltrawideWindows: Move Window to up-width 2/3", "alt+Num+8", function () {
+    move(workspace, 1, 2, 0, 0, 1, 1)
 });
 
 registerShortcut("MoveWindowToUpRight23", "UltrawideWindows: Move Window to fit up-right 2/3 width ", "alt+Num+9", function () {
     move(workspace, 3, 2, 1, 0, 2, 1)
+});
+
+registerShortcut("MoveWindowToFitDownLeft23", "UltrawideWindows: Move Window to fit down-left 2/3 width ", "alt+Num+1", function () {
+    move(workspace, 3, 2, 0, 1, 2, 1)
+});
+
+registerShortcut("MoveWindowToDownCenter23", "UltrawideWindows: Move Window to down-width 2/3", "alt+Num+2", function () {
+    move(workspace, 1, 2, 0, 1, 1, 1)
 });
 
 registerShortcut("MoveWindowToFitDownRight23", "UltrawideWindows: Move Window to fit down-right 2/3 width ", "alt+Num+3", function () {
@@ -146,7 +170,7 @@ registerShortcut("MoveWindowToRightHeight23", "UltrawideWindows: Move Window to 
 });
 
 // General
-registerShortcut("MoveWindowToMaximize", "UltrawideWindows: Maximize Window", "alt+Num+5", function () {
+registerShortcut("MoveWindowToMaximize", "UltrawideWindows: Maximize Window", "Meta+Num+0", function () {
     move(workspace, 1, 1, 0, 0, 1, 1)
 });
 
@@ -158,3 +182,10 @@ registerShortcut("MoveWindowToMaximize2", "UltrawideWindows: Maximize Window (co
     move(workspace, 1, 1, 0, 0, 1, 1)
 });
 
+registerShortcut("MoveWindowToCenter", "UltrawideWindows: Center Window", "ctrl+Num+5", function () {
+    center(workspace)
+});
+
+registerShortcut("MoveWindowToCenter1", "UltrawideWindows: Center Window (copy)", "alt+Num+5", function () {
+    center(workspace)
+});

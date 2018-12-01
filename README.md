@@ -56,9 +56,9 @@ My suggestion is to use the following configuration:
 | ------------------------------------ | ---------------------------------------------------- |
 | <kbd>Meta</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window</kbd>         |
 | <kbd>Alt</kbd> + <kbd>Numpad0</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
-| <kbd>Alt</kbd> + <kbd>Numpad5</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
 | <kbd>Ctrl</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
-| <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
+| <kbd>Alt</kbd> + <kbd>Numpad5</kbd>  | <kbd>UltrawideWindows: Center Window</kbd>           |
+| <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Center Window (copy)</kbd>    |
 
 
 
