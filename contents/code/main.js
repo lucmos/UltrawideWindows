@@ -18,6 +18,14 @@ function newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xS
     var newY = maxArea.y + height * y;
     return [newX, newY, width * xSlotToFill, height * ySlotToFill]
 }
+function reposition(client, newX, newY, w, h) {
+    client.geometry = {
+        x: newX,
+        y: newY,
+        width: w,
+        height: h
+    };
+}
 
 function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var client = workspace.activeClient;
@@ -27,12 +35,7 @@ function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToF
             newY = arr[1],
             w = arr[2],
             h = arr[3];
-        client.geometry = {
-            x: newX,
-            y: newY,
-            width: w,
-            height: h
-        };
+        reposition(client, newX, newY, w, h)
     }
 }
 
@@ -42,12 +45,7 @@ function center(workspace) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
         var newX = maxArea.x + ((maxArea.width - client.width) / 2);
         var newY = maxArea.y + ((maxArea.height - client.height) / 2);
-        client.geometry = {
-            x: newX,
-            y: newY,
-            width: client.width,
-            height: client.height
-        };
+        reposition(client, newX, newY, client.width, client.height)
     }
 }
 
