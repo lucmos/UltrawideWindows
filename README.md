@@ -72,11 +72,13 @@ Using only `Ultrawide` shortcuts, avoids these conflicts. However:
 
 
 # Update
+To update it's enough to delete all UltrawideShortcuts from `.config/kglobalshortcuts` and then:
+
 ```bash
 $ cd UltrawideWindows
 $ ./scripts/update.sh
+$ reboot
 ```
-Then disable and re-enable the script.
 
 # Remove
 
