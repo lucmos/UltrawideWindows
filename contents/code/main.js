@@ -1,23 +1,52 @@
 function newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
+
+    var top_border = 10;     
+    var bot_border = 5;
+    var left_a_rigt_border = 10;
+
     var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
     var width;
-    if (x == numberXslots) {
-        width = Math.floor(maxArea.width / numberXslots);
+    if ( x == numberXslots) {
+        width = Math.floor((maxArea.width - 2 * left_a_rigt_border) / numberXslots);
     } else {
-        width = Math.ceil(maxArea.width / numberXslots);
+        width = Math.ceil((maxArea.width - 2 * left_a_rigt_border) / numberXslots);
     }
-
     var height;
     if (y == numberYslots) {
-        height = Math.floor(maxArea.height / numberYslots);
+        height = Math.floor((maxArea.height - top_border - bot_border) / numberYslots);
     } else {
-        height = Math.ceil(maxArea.height / numberYslots);
+        height = Math.ceil((maxArea.height - top_border - bot_border) / numberYslots);
     }
 
-    var newX = maxArea.x + width * x;
-    var newY = maxArea.y + height * y;
-    return [newX, newY, width * xSlotToFill, height * ySlotToFill]
+    var newX = maxArea.x + width * x + left_a_rigt_border;
+    var newY = maxArea.y + height * y + top_border;
+
+    // add margin between windows
+    x_var = add_margin_bt_windows(newX, width, numberXslots, x)
+    y_var = add_margin_bt_windows(newY, height, numberYslots, y)
+
+    return [x_var[0], y_var[0], x_var[1] * xSlotToFill, y_var[1] * ySlotToFill]
 }
+
+function add_margin_bt_windows(newX, width, numberXslots, x){
+    var border_bw_windows = 10;
+    if (numberXslots == 1){
+        // max the client
+        return [newX, width]
+    }
+    if (x == 0 || x == numberXslots -1){
+        // left / rigth
+        width = width - Math.floor(border_bw_windows / 2);
+    } else {
+        width = width - border_bw_windows;
+    }
+    if (x == 0){
+        return [newX, width]
+    }
+    newX = newX + Math.floor(border_bw_windows / 2);
+    return [newX, width]
+}
+
 function reposition(client, newX, newY, w, h) {
     client.geometry = {
         x: newX,
