@@ -1,49 +1,60 @@
+'use strict';
+var readConfig = 
+// @ts-ignore, KWin global
+readConfig ||
+    function (key, defaultValue) {
+        return defaultValue;
+    };
+function readConfigString(key, defaultValue) {
+    return readConfig(key, defaultValue).toString();
+}
+var margins = {
+    top: readConfig("marginTop", 0),
+    left: readConfig("marginLeft", 0),
+    bottom: readConfig("marginBottom", 0),
+    right: readConfig("marginRight", 0),
+    gap: readConfig("gap", 0)
+};
+
 function newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
-
-    var top_border = 10;     
-    var bot_border = 5;
-    var left_a_rigt_border = 10;
-
     var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
     var width;
     if ( x == numberXslots) {
-        width = Math.floor((maxArea.width - 2 * left_a_rigt_border) / numberXslots);
+        width = Math.floor((maxArea.width - margins.left - margins.right) / numberXslots);
     } else {
-        width = Math.ceil((maxArea.width - 2 * left_a_rigt_border) / numberXslots);
+        width = Math.ceil((maxArea.width - margins.left - margins.right) / numberXslots);
     }
     var height;
     if (y == numberYslots) {
-        height = Math.floor((maxArea.height - top_border - bot_border) / numberYslots);
+        height = Math.floor((maxArea.height - margins.top - margins.bottom) / numberYslots);
     } else {
-        height = Math.ceil((maxArea.height - top_border - bot_border) / numberYslots);
+        height = Math.ceil((maxArea.height - margins.top - margins.bottom) / numberYslots);
     }
 
-    var newX = maxArea.x + width * x + left_a_rigt_border;
-    var newY = maxArea.y + height * y + top_border;
+    var newX = maxArea.x + width * x + margins.left;
+    var newY = maxArea.y + height * y + margins.top;
 
     // add margin between windows
     x_var = add_margin_bt_windows(newX, width, numberXslots, x)
     y_var = add_margin_bt_windows(newY, height, numberYslots, y)
-
+    
+    // return [newX, newY, width * xSlotToFill, height * ySlotToFill]
     return [x_var[0], y_var[0], x_var[1] * xSlotToFill, y_var[1] * ySlotToFill]
 }
 
 function add_margin_bt_windows(newX, width, numberXslots, x){
-    var border_bw_windows = 10;
     if (numberXslots == 1){
-        // max the client
+        // just max the client
         return [newX, width]
     }
     if (x == 0 || x == numberXslots -1){
-        // left / rigth
-        width = width - Math.floor(border_bw_windows / 2);
+        // client on left / rigth
+        width = width - Math.floor(margins.gap / 2);
     } else {
-        width = width - border_bw_windows;
+        width = width - gap;
     }
-    if (x == 0){
-        return [newX, width]
-    }
-    newX = newX + Math.floor(border_bw_windows / 2);
+    newX = newX + Math.floor(margins.gap / 2);
+    print(newX)
     return [newX, width]
 }
 
@@ -72,12 +83,13 @@ function center(workspace) {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
-        var newX = maxArea.x + ((maxArea.width - client.width) / 2);
-        var newY = maxArea.y + ((maxArea.height - client.height) / 2);
+        // var newX = maxArea.x + ((maxArea.width + margins.left - client.width) / 2);
+        // var newY = maxArea.y + ((maxArea.height + margins.top - client.height) / 2);
+        var newX = Math.floor((maxArea.width - client.width) / 2);
+        var newY = ((maxArea.height - client.height) / 2);
         reposition(client, newX, newY, client.width, client.height)
     }
 }
-
 
 // function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
 //     var client = workspace.activeClient;
