@@ -11,6 +11,7 @@ This solution is intended to be an easy-to-use middleground between the default 
 $ git clone git@github.com:LucaMoschella/UltrawideWindows.git
 $ cd UltrawideWindows
 $ plasmapkg2 --type=kwinscript -i .
+$ kwin_x11 --replace &
 ```
 
 # Usage
