@@ -164,8 +164,16 @@ registerShortcut("MoveWindowToLeftHeight4x2_centerbiased", "UltrawideWindows: Mo
     move(workspace, 4, 1, 0, 0, 1, 1)
 });
 
+registerShortcut("MoveWindowToCenterLeftHeight4x2_centerbiased", "UltrawideWindows: Move Window to center-left-height (4x2 center biased)", "Ctrl+Meta+Shift+Num+4", function () {
+    move(workspace, 4, 1, 1, 0, 1, 1)
+});
+
 registerShortcut("MoveWindowToCenterHeight4x2_centerbiased", "UltrawideWindows: Move Window to center-height (4x2 center biased)", "Ctrl+Meta+Num+5", function () {
     move(workspace, 4, 1, 1, 0, 2, 1)
+});
+
+registerShortcut("MoveWindowToCenterRightHeight4x2_centerbiased", "UltrawideWindows: Move Window to center-right-height (4x2 center biased)", "Ctrl+Meta+Shift+Num+6", function () {
+    move(workspace, 4, 1, 2, 0, 1, 1)
 });
 
 registerShortcut("MoveWindowToRightHeight4x2_centerbiased", "UltrawideWindows: Move Window to right-height (4x2 center biased)", "Ctrl+Meta+Num+6", function () {

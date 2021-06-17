@@ -42,17 +42,19 @@ My suggestion is to use the following configuration:
 | <kbd>ctrl</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (2x2)</kbd>  |
 | <kbd>ctrl</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (2x2)</kbd> |
 
-| Shortcuts                                              | Commands in 4x2 grid (center biased)                                          |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to up-left (4x2 center biased)</kbd>       |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up-width (4x2 center biased)</kbd>      |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to up-right (4x2 center biased)</kbd>      |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad1</kbd> | <kbd>UltrawideWindows: Move Window to down-left (4x2 center biased)</kbd>     |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down-width (4x2 center biased)</kbd>    |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad3</kbd> | <kbd>UltrawideWindows: Move Window to down-right (4x2 center biased)</kbd>    |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to left-height (4x2 center biased)</kbd>   |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Move Window to center-height (4x2 center biased)</kbd> |
-| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height (4x2 center biased)</kbd>  |
+| Shortcuts                                                                 | Commands in 4x2 grid (center biased)                                                 |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad7</kbd>                    | <kbd>UltrawideWindows: Move Window to up-left (4x2 center biased)</kbd>              |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad8</kbd>                    | <kbd>UltrawideWindows: Move Window to up-width (4x2 center biased)</kbd>             |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad9</kbd>                    | <kbd>UltrawideWindows: Move Window to up-right (4x2 center biased)</kbd>             |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad1</kbd>                    | <kbd>UltrawideWindows: Move Window to down-left (4x2 center biased)</kbd>            |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad2</kbd>                    | <kbd>UltrawideWindows: Move Window to down-width (4x2 center biased)</kbd>           |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad3</kbd>                    | <kbd>UltrawideWindows: Move Window to down-right (4x2 center biased)</kbd>           |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad4</kbd>                    | <kbd>UltrawideWindows: Move Window to left-height (4x2 center biased)</kbd>          |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>shift</kbd> + <kbd>Numpad4</kbd> | <kbd>UltrawideWindows: Move Window to center-left-height (4x2 center biased)</kbd>   |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad5</kbd>                    | <kbd>UltrawideWindows: Move Window to center-height (4x2 center biased)</kbd>        |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>shift</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to center-right-height (4x2 center biased)</kbd>  |
+| <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad6</kbd>                    | <kbd>UltrawideWindows: Move Window to right-height (4x2 center biased)</kbd>         |
 
 
 | Shortcuts                           | Commands to fit 2/3 of the width                                       |
