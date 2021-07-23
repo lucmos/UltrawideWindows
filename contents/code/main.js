@@ -37,6 +37,7 @@ function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToF
             h = arr[3];
         reposition(client, newX, newY, w, h)
     }
+    client.setMaximize(false,false)
 }
 
 function center(workspace) {
@@ -254,7 +255,8 @@ registerShortcut("MoveWindowToRightHeight23_center_biased", "UltrawideWindows: M
 
 // General
 registerShortcut("MoveWindowToMaximize", "UltrawideWindows: Maximize Window", "Meta+Num+0", function () {
-    move(workspace, 1, 1, 0, 0, 1, 1)
+    var client = workspace.activeClient;
+    client.setMaximize(true,true)
 });
 
 registerShortcut("MoveWindowToMaximize1", "UltrawideWindows: Maximize Window (copy)", "alt+Num+0", function () {
