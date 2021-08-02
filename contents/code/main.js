@@ -30,6 +30,7 @@ function reposition(client, newX, newY, w, h) {
 function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var client = workspace.activeClient;
     if (client.moveable) {
+        client.setMaximize(false,false);
         arr = newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
         var newX = arr[0],
             newY = arr[1],
@@ -37,7 +38,6 @@ function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToF
             h = arr[3];
         reposition(client, newX, newY, w, h)
     }
-    client.setMaximize(false,false)
 }
 
 function center(workspace) {
