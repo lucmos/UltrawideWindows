@@ -43,7 +43,7 @@ function center(workspace) {
     }
 }
 
-// function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {interactiveconsoleautosave
+// function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
 //     var client = workspace.activeClient;
 //     if (client.moveable) {
 //         arr = getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
