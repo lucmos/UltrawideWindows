@@ -22,7 +22,7 @@ function reposition(client, newX, newY, w, h) {
 
 function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var client = workspace.activeClient;
-    if (client.moveable) {
+    if (client.moveable && client.resizeable) {
         client.setMaximize(false,false);
         arr = newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
         var newX = arr[0],
