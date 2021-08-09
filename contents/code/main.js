@@ -1,35 +1,28 @@
 function newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
-    var width;
-    if (x == numberXslots) {
-        width = Math.floor(maxArea.width / numberXslots);
-    } else {
-        width = Math.ceil(maxArea.width / numberXslots);
-    }
 
-    var height;
-    if (y == numberYslots) {
-        height = Math.floor(maxArea.height / numberYslots);
-    } else {
-        height = Math.ceil(maxArea.height / numberYslots);
-    }
+    var newX = maxArea.x + Math.round(maxArea.width / numberXslots * x);
+    var newY = maxArea.y + Math.round(maxArea.height / numberYslots * y);
 
-    var newX = maxArea.x + width * x;
-    var newY = maxArea.y + height * y;
-    return [newX, newY, width * xSlotToFill, height * ySlotToFill]
+    // Width and height is calculated by finding where the window should end and subtracting where it should start
+    var clientWidth = Math.round(maxArea.width / numberXslots * (x + xSlotToFill)) - (newX - maxArea.x);
+    var clientHeight = Math.round(maxArea.height / numberYslots * (y + ySlotToFill)) - (newY - maxArea.y);
+
+    return [newX, newY, clientWidth, clientHeight]
 }
+
 function reposition(client, newX, newY, w, h) {
-    client.geometry = {
+    client.frameGeometry = {
         x: newX,
         y: newY,
         width: w,
         height: h
-    };
+    }
 }
 
 function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
     var client = workspace.activeClient;
-    if (client.moveable) {
+    if (client.moveable && client.resizeable) {
         client.setMaximize(false,false);
         arr = newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
         var newX = arr[0],
@@ -44,12 +37,11 @@ function center(workspace) {
     var client = workspace.activeClient;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
-        var newX = maxArea.x + ((maxArea.width - client.width) / 2);
-        var newY = maxArea.y + ((maxArea.height - client.height) / 2);
+        var newX = Math.round(maxArea.x + ((maxArea.width - client.width) / 2));
+        var newY = Math.round(maxArea.y + ((maxArea.height - client.height) / 2));
         reposition(client, newX, newY, client.width, client.height)
     }
 }
-
 
 // function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
 //     var client = workspace.activeClient;
