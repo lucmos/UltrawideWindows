@@ -245,6 +245,35 @@ registerShortcut("MoveWindowToRightHeight23_center_biased", "UltrawideWindows: M
     move(workspace, 6, 1, 5, 0, 1, 1)
 });
 
+// Fit 1-2-1 layout
+registerShortcut("MoveWindowToRightHeight121", "UltrawideWindows: Move Window to fit right-height 1-2-1", "alt+meta+ctrl+Num+6", function () {
+    move(workspace, 4, 1, 3, 0, 1, 1)
+});
+
+registerShortcut("MoveWindowToRightHeightTop121", "UltrawideWindows: Move Window to fit right-height-top 1-2-1", "alt+meta+ctrl+Num+9", function () {
+    move(workspace, 4, 2, 3, 0, 1, 1)
+});
+
+registerShortcut("MoveWindowToRightHeightBottom121", "UltrawideWindows: Move Window to fit right-height-bottom 1-2-1", "alt+meta+ctrl+Num+3", function () {
+    move(workspace, 4, 2, 3, 1, 1, 1)
+});
+
+registerShortcut("MoveWindowToLeftHeight121", "UltrawideWindows: Move Window to fit left-height 1-2-1", "alt+meta+ctrl+Num+4", function () {
+    move(workspace, 4, 1, 0, 0, 1, 1)
+});
+
+registerShortcut("MoveWindowToLeftHeightTop121", "UltrawideWindows: Move Window to fit left-height-top 1-2-1", "alt+meta+ctrl+Num+7", function () {
+    move(workspace, 4, 2, 0, 0, 1, 1)
+});
+
+registerShortcut("MoveWindowToLeftHeightBottom121", "UltrawideWindows: Move Window to fit left-height-bottom 1-2-1", "alt+meta+ctrl+Num+1", function () {
+    move(workspace, 4, 2, 0, 1, 1, 1)
+});
+
+registerShortcut("MoveWindowToCenterHeight121", "UltrawideWindows: Move Window to fit center-height 1-2-1", "alt+meta+ctrl+Num+5", function () {
+    move(workspace, 4, 1, 1, 0, 2, 1)
+});
+
 // General
 registerShortcut("MoveWindowToMaximize", "UltrawideWindows: Maximize Window", "Meta+Num+0", function () {
     var client = workspace.activeClient;
