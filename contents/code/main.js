@@ -128,6 +128,21 @@ registerShortcut("MoveWindowToRightHeight2x2", "UltrawideWindows: Move Window to
 });
 
 
+// GRID 1x3 (for vertical monitors)
+
+registerShortcut("MoveWindowToUp1x3", "UltrawideWindows: Move Window to up (1x3)", "ctrl+alt+Num+8", function () {
+    move(workspace, 1, 3, 0, 0, 1, 1)
+});
+
+registerShortcut("MoveWindowToCenter1x3", "UltrawideWindows: Move Window to center (1x3)", "ctrl+alt+Num+5", function () {
+    move(workspace, 1, 3, 0, 1, 1, 1)
+});
+
+registerShortcut("MoveWindowToRight1x3", "UltrawideWindows: Move Window to down (1x3)", "ctrl+alt+Num+2", function () {
+    move(workspace, 1, 3, 0, 2, 1, 1)
+});
+
+
 // GRID 4x2 center biased (lateral windows fit accordingly to ctrl-X shortcuts)
 registerShortcut("MoveWindowToUpLeft4x2_centerbiased", "UltrawideWindows: Move Window to up-left (4x2 center biased)", "Ctrl+Meta+Num+7", function () {
     move(workspace, 4, 2, 0, 0, 1, 1)
