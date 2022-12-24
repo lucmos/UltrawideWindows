@@ -138,7 +138,7 @@ registerShortcut("MoveWindowToCenter1x3", "UltrawideWindows: Move Window to cent
     move(workspace, 1, 3, 0, 1, 1, 1)
 });
 
-registerShortcut("MoveWindowToRight1x3", "UltrawideWindows: Move Window to down (1x3)", "ctrl+alt+Num+2", function () {
+registerShortcut("MoveWindowToDown1x3", "UltrawideWindows: Move Window to down (1x3)", "ctrl+alt+Num+2", function () {
     move(workspace, 1, 3, 0, 2, 1, 1)
 });
 
