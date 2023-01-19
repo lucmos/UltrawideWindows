@@ -183,7 +183,7 @@ registerShortcut("MoveWindowToRightHeight34", "UltrawideWindows: Move Window to 
 });
 
 // Fit 2/3 screen
-registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit up-left 2/3 width ", "alt+Num+7", function () {
+registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit up-left 2/3 width", "alt+Num+7", function () {
     move(workspace, 3, 2, 0, 0, 2, 1)
 });
 
