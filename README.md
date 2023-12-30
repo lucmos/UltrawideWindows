@@ -8,7 +8,7 @@ This solution is intended to be an easy-to-use middleground between the default 
 # Installation
 
 ```bash
-$ git clone git@github.com:LucaMoschella/UltrawideWindows.git
+$ git clone git@github.com:lucmos/UltrawideWindows.git
 $ cd UltrawideWindows
 $ plasmapkg2 --type=kwinscript -i .
 $ kwin_x11 --replace &
