@@ -56,6 +56,11 @@ My suggestion is to use the following configuration:
 | <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>shift</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to center-right-height (4x2 center biased)</kbd>  |
 | <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad6</kbd>                    | <kbd>UltrawideWindows: Move Window to right-height (4x2 center biased)</kbd>         |
 
+| Shortcuts                                             | Commands in 1x3 grid (useful for vertical monitors)            |
+| ----------------------------------------------------- | -------------------------------------------------------------- |
+| <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up (1x3)</kbd>           |
+| <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Move Window to center (1x3)</kbd>       |
+| <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down (1x3)</kbd>         |
 
 | Shortcuts                           | Commands to fit 2/3 of the width                                       |
 | ----------------------------------- | ---------------------------------------------------------------------- |
