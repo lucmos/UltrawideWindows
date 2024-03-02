@@ -1,0 +1,24 @@
+{
+  "KPackageStructure": "KWin/Script",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "nopaste94@gmail.com",
+        "Name": "Luca Moschella"
+      },
+      {
+        "Email": "cyberang3l@gmail.com",
+        "Name": "Vangelis Tasoulas"
+      }
+    ],
+    "Description": "Move windows in useful positions in a ultrawide monitor",
+    "License": "GPL",
+    "Icon": "preferences-system-windows-script-test",
+    "Name": "Ultrawide Windows",
+    "Id": "ultrawidewindows",
+    "Version": 4.0,
+    "EnabledByDefault": true
+  },
+  "X-Plasma-API": "javascript",
+  "X-Plasma-MainScript": "code/main.js"
+}
