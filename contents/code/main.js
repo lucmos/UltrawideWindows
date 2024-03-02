@@ -21,7 +21,7 @@ function reposition(client, newX, newY, w, h) {
 }
 
 function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
-    var client = workspace.activeClient;
+    var client = workspace.activeWindow;
     if (client.moveable && client.resizeable) {
         client.setMaximize(false,false);
         arr = newSlotPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
@@ -34,7 +34,7 @@ function move(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToF
 }
 
 function center(workspace) {
-    var client = workspace.activeClient;
+    var client = workspace.activeWindow;
     if (client.moveable) {
         var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
         var newX = Math.round(maxArea.x + ((maxArea.width - client.width) / 2));

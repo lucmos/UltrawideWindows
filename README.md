@@ -10,8 +10,7 @@ This solution is intended to be an easy-to-use middleground between the default 
 ```bash
 $ git clone git@github.com:lucmos/UltrawideWindows.git
 $ cd UltrawideWindows
-$ plasmapkg2 --type=kwinscript -i .
-$ kwin_x11 --replace &
+$ ./scripts/update.sh
 ```
 
 # Usage
@@ -118,5 +117,5 @@ $ ./scripts/update.sh
 
 ```bash
 $ cd UltrawideWindows
-$ plasmapkg2 --type=kwinscript -r .
+$ ./scripts/uninstall.sh
 ```
