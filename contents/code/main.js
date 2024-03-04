@@ -43,6 +43,163 @@ function center(workspace) {
     }
 }
 
+function ensureWithinVisibleArea(client, new_w, new_h, old_w, old_h, old_x, old_y) {
+    var new_x, new_y;
+    var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
+    var ratio = new_w / new_h;
+
+    var diff_x = old_w - new_w,
+        diff_y = old_h - new_h;
+
+    // Calculate a new x and y that will keep the position
+    // of the window centered with respect to its previous
+    // position
+    new_x = old_x + Math.round(diff_x / 2);
+    new_y = old_y + Math.round(diff_y / 2);
+
+    // Ensure the newly calculate position is within the boundaries
+    // of the visible desktop area
+    if (new_y + new_h > maxArea.bottom) {
+        new_y = new_y - ((new_y + new_h) - maxArea.bottom);
+    }
+    if (new_x + new_w > maxArea.right) {
+        new_x = new_x - ((new_x + new_w) - maxArea.right);
+    }
+
+    // Also ensure that new_x and new_y is never less than 0
+    new_x = new_x < 0 ? 0 : new_x;
+    new_y = new_y < 0 ? 0 : new_y;
+
+    return {"x": new_x, "y": new_y, "w": new_w, "h": new_h};
+}
+
+function calcShrink(client, decStepPx, minSizePx) {
+    var geom = client.frameGeometry;
+    var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
+
+    var ratio = geom.width / geom.height;
+    var new_w, new_h;
+    var new_xywh = {"x": geom.x, "y": geom.y, "w": geom.width, "h": geom.height};
+
+    // Ensure the minSizePx is smaller than maxArea width/height
+    minSizePx = minSizePx > maxArea.width ? maxArea.width : minSizePx;
+    minSizePx = minSizePx > maxArea.height ? maxArea.height : minSizePx;
+
+    if (client.moveable && client.resizeable) {
+        if (ratio >= 1) {
+            // Width >= Height
+            new_w = geom.width - decStepPx;
+            new_w = new_w < minSizePx ? minSizePx : new_w;
+            new_h = Math.round(new_w / ratio);
+
+            if (new_h > maxArea.height) {
+                new_h = maxArea.height
+                new_w = Math.round(new_h * ratio);
+            }
+        } else {
+            // Height > Width
+            new_h = geom.height - decStepPx;
+            new_h = new_h < minSizePx ? minSizePx : new_h;
+            new_w = Math.round(new_h * ratio);
+
+            if (new_w > maxArea.width) {
+                new_w = maxArea.width
+                new_h = Math.round(new_w / ratio);
+            }
+        }
+
+        new_xywh = ensureWithinVisibleArea(client, new_w, new_h, geom.width, geom.height, geom.x, geom.y)
+    }
+
+    return {"x": new_xywh.x, "y": new_xywh.y, "w": new_xywh.w, "h": new_xywh.h};
+}
+
+function calcGrow(client, incStepPx) {
+    var geom = client.frameGeometry;
+    var maxArea = workspace.clientArea(KWin.MaximizeArea, client);
+
+    var ratio = geom.width / geom.height;
+    var new_w, new_h;
+    var new_xywh = {"x": geom.x, "y": geom.y, "w": geom.width, "h": geom.height};
+
+    if (client.moveable && client.resizeable) {
+        if (ratio >= 1) {
+            // Width >= Height
+            new_w = geom.width + incStepPx;
+            new_w = new_w > maxArea.width ? maxArea.width : new_w;
+            new_h = Math.round(new_w / ratio);
+
+            if (new_h > maxArea.height) {
+                new_h = maxArea.height
+                new_w = Math.round(new_h * ratio);
+            }
+        } else {
+            // Height > Width
+            new_h = geom.height + incStepPx;
+            new_h = new_h > maxArea.height ? maxArea.height : new_h;
+            new_w = Math.round(new_h * ratio);
+
+            if (new_w > maxArea.width) {
+                new_w = maxArea.width
+                new_h = Math.round(new_w / ratio);
+            }
+        }
+
+        new_xywh = ensureWithinVisibleArea(client, new_w, new_h, geom.width, geom.height, geom.x, geom.y)
+    }
+
+    return {"x": new_xywh.x, "y": new_xywh.y, "w": new_xywh.w, "h": new_xywh.h};
+}
+
+function resize(workspace, action, incStepPx, minSizePx) {
+    var client = workspace.activeWindow;
+
+    if (client.moveable && client.resizeable) {
+        var geom = client.frameGeometry;
+        var newGeom;
+
+        var x = geom.x,
+            y = geom.y,
+            w = geom.width,
+            h = geom.height,
+            ratio = geom.width / geom.height;
+
+        if (action == "shrink") {
+            newGeom =  calcShrink(client, incStepPx, minSizePx);
+        } else if (action == "grow") {
+            newGeom = calcGrow(client, incStepPx);
+        } else {
+            print("Please choose an action between 'shrink' and 'grow'");
+        }
+
+        // print(client.resourceName, JSON.stringify(newGeom));
+
+        reposition(client, newGeom.x, newGeom.y, newGeom.w, newGeom.h);
+    }
+}
+
+function moveWithFixedSize(workspace, moveDirection, movePx) {
+    var client = workspace.activeWindow;
+    var geom = client.frameGeometry;
+    var x = geom.x,
+        y = geom.y;
+    if (client.moveable) {
+        if (moveDirection == "left") {
+            x = geom.x - movePx;
+        } else if (moveDirection == "right") {
+            x = geom.x + movePx;
+        } else if (moveDirection == "up") {
+            y = geom.y - movePx;
+        } else if (moveDirection == "down") {
+            y = geom.y + movePx;
+        } else {
+            print("Please choose a move direction between 'left', 'right', 'up' and 'down'");
+        }
+        new_xy = ensureWithinVisibleArea(client, geom.width, geom.height, geom.width, geom.height, x, y);
+        reposition(client, new_xy.x, new_xy.y, geom.width, geom.height);
+    }
+}
+
 // function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
 //     var client = workspace.activeWindow;
 //     if (client.moveable) {
@@ -273,4 +430,28 @@ registerShortcut("MoveWindowToCenter", "UltrawideWindows: Center Window", "ctrl+
 
 registerShortcut("MoveWindowToCenter1", "UltrawideWindows: Center Window (copy)", "alt+Num+5", function () {
     center(workspace)
+});
+
+registerShortcut("IncreaseWindowSize", "UltrawideWindows: Increase the window size in place", "Ctrl+Meta+Num++", function () {
+    resize(workspace, "grow", 20, 0);
+});
+
+registerShortcut("DecreaseWindowSize", "UltrawideWindows: Decrease the window size in place", "Ctrl+Meta+Num+-", function () {
+    resize(workspace, "shrink", 20, 300);
+});
+
+registerShortcut("MoveWindowLeft", "UltrawideWindows: Move the window to the left", "Ctrl+Meta+Left", function () {
+    moveWithFixedSize(workspace, "left", 20);
+});
+
+registerShortcut("MoveWindowRight", "UltrawideWindows: Move the window to the right", "Ctrl+Meta+Right", function () {
+    moveWithFixedSize(workspace, "right", 20);
+});
+
+registerShortcut("MoveWindowUp", "UltrawideWindows: Move the window up", "Ctrl+Meta+Up", function () {
+    moveWithFixedSize(workspace, "up", 20);
+});
+
+registerShortcut("MoveWindowDown", "UltrawideWindows: Move the window down", "Ctrl+Meta+Down", function () {
+    moveWithFixedSize(workspace, "down", 20);
 });
