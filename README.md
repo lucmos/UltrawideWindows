@@ -10,8 +10,8 @@ This solution is intended to be an easy-to-use middleground between the default 
 ```bash
 $ git clone git@github.com:lucmos/UltrawideWindows.git
 $ cd UltrawideWindows
-$ plasmapkg2 --type=kwinscript -i .
-$ kwin_x11 --replace &
+$ kpackagetool6 --type=KWin/Script -i .
+$ kwriteconfig6 --file kwinrc --group Plugins --key ultrawidewindowsEnabled true  # or use KWin Script configuration in System Settings
 ```
 
 # Usage

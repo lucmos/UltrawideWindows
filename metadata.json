@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Name": "Ultrawide Windows",
+        "Description": "Move windows in useful positions in a ultrawide monitor",
+        "Icon": "preferences-system-windows-script-test",
+
+        "Authors": [
+            {
+                "Email": "nopaste94@gmail.com",
+                "Name": "Luca Moschella"
+            },
+            {
+                "Email": "denis@stogl.de",
+                "Name": "Dr. Denis Stogl"
+            }
+
+        ],
+        "Id": "ultrawidewindows",
+        "Version": "1.2",
+        "License": "GPL-2.0",
+        "Website": "https://github.com/lucmos/UltrawideWindows"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
