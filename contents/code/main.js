@@ -44,7 +44,7 @@ function center(workspace) {
 }
 
 // function isInPosition(workspace, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill) {
-//     var client = workspace.activeClient;
+//     var client = workspace.activeWindow;
 //     if (client.moveable) {
 //         arr = getPosition(workspace, client, numberXslots, numberYslots, x, y, xSlotToFill, ySlotToFill);
 //         var newX = arr[0],
@@ -247,7 +247,7 @@ registerShortcut("MoveWindowToRightHeight23_center_biased", "UltrawideWindows: M
 
 // General
 registerShortcut("MoveWindowToMaximize", "UltrawideWindows: Maximize Window", "Meta+Num+0", function () {
-    var client = workspace.activeClient;
+    var client = workspace.activeWindow;
     client.setMaximize(true,true)
 });
 
