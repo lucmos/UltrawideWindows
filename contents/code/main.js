@@ -173,9 +173,17 @@ registerShortcut("MoveWindowToRightHeight4x2_centerbiased", "UltrawideWindows: M
     move(workspace, 4, 1, 3, 0, 1, 1)
 });
 
+// Fit 3/4 screen
+registerShortcut("MoveWindowToLeftHeight34", "UltrawideWindows: Move Window to fit left-height 3/4 width", "Ctrl+Meta+Shift+Num+8", function () {
+  move(workspace, 4, 1, 0, 0, 3, 1)
+});
+
+registerShortcut("MoveWindowToRightHeight34", "UltrawideWindows: Move Window to fit right-height 3/4 width", "Ctrl+Meta+Shift+Num+9", function () {
+  move(workspace, 4, 1, 1, 0, 3, 1)
+});
 
 // Fit 2/3 screen
-registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit up-left 2/3 width ", "alt+Num+7", function () {
+registerShortcut("MoveWindowToUpLeft23", "UltrawideWindows: Move Window to fit up-left 2/3 width", "alt+Num+7", function () {
     move(workspace, 3, 2, 0, 0, 2, 1)
 });
 
