@@ -79,15 +79,21 @@ My suggestion is to use the following configuration:
 | <kbd>alt</kbd> + <kbd>Meta</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Move Window to center-height 2/3 width (center biased)</kbd> |
 | <kbd>alt</kbd> + <kbd>Meta</kbd> + <kbd>Numpad6</kbd> | <kbd>UltrawideWindows: Move Window to right-height 2/3 width (center biased)</kbd>  |
 
-| Shortcuts                                              | General commands (easy to use)                       |
-| ------------------------------------------------------ | ---------------------------------------------------- |
-| <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                   | <kbd>UltrawideWindows: Maximize Window</kbd>         |
-| <kbd>Alt</kbd> + <kbd>Numpad0</kbd>                    | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>  |
-| <kbd>Ctrl</kbd>+ <kbd>Numpad0</kbd>                    | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd> |
-| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window (copy3)</kbd> |
-| <kbd>Alt</kbd> + <kbd>Meta</kbd> + <kbd>Numpad0</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy4)</kbd> |
-| <kbd>Alt</kbd> + <kbd>Numpad5</kbd>                    | <kbd>UltrawideWindows: Center Window</kbd>           |
-| <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd>                   | <kbd>UltrawideWindows: Center Window (copy)</kbd>    |
+| Shortcuts                                              | General commands (easy to use)                                               |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| <kbd>Meta</kbd> + <kbd>Numpad0</kbd>                   | <kbd>UltrawideWindows: Maximize Window</kbd>                                 |
+| <kbd>Alt</kbd> + <kbd>Numpad0</kbd>                    | <kbd>UltrawideWindows: Maximize Window (copy)</kbd>                          |
+| <kbd>Ctrl</kbd>+ <kbd>Numpad0</kbd>                    | <kbd>UltrawideWindows: Maximize Window (copy2)</kbd>                         |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad0</kbd> | <kbd>UltrawideWindows: Maximize Window (copy3)</kbd>                         |
+| <kbd>Alt</kbd> + <kbd>Meta</kbd> + <kbd>Numpad0</kbd>  | <kbd>UltrawideWindows: Maximize Window (copy4)</kbd>                         |
+| <kbd>Alt</kbd> + <kbd>Numpad5</kbd>                    | <kbd>UltrawideWindows: Center Window</kbd>                                   |
+| <kbd>Ctrl</kbd> + <kbd>Numpad5</kbd>                   | <kbd>UltrawideWindows: Center Window (copy)</kbd>                            |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad+</kbd> | <kbd>UltrawideWindows: Increase Window Size by 20px - Maintains aspect ratio |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Numpad-</kbd> | <kbd>UltrawideWindows: Decrease Window Size by 20px - Maintains aspect ratio |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Left</kbd>    | <kbd>UltrawideWindows: Move Window Left by 20px                              |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Right</kbd>   | <kbd>UltrawideWindows: Move Window Right by 20px                             |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Up</kbd>      | <kbd>UltrawideWindows: Move Window Up by 20px                                |
+| <kbd>Ctrl</kbd> + <kbd>Meta</kbd> + <kbd>Down</kbd>    | <kbd>UltrawideWindows: Move Window Down by 20px                              |
 
 
 
