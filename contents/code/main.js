@@ -155,14 +155,7 @@ function resize(workspace, action, incStepPx, minSizePx) {
     var client = workspace.activeWindow;
 
     if (client.moveable && client.resizeable) {
-        var geom = client.frameGeometry;
         var newGeom;
-
-        var x = geom.x,
-            y = geom.y,
-            w = geom.width,
-            h = geom.height,
-            ratio = geom.width / geom.height;
 
         if (action == "shrink") {
             newGeom =  calcShrink(client, incStepPx, minSizePx);
@@ -170,6 +163,7 @@ function resize(workspace, action, incStepPx, minSizePx) {
             newGeom = calcGrow(client, incStepPx);
         } else {
             print("Please choose an action between 'shrink' and 'grow'");
+            return;
         }
 
         // print(client.resourceName, JSON.stringify(newGeom));
@@ -194,6 +188,7 @@ function moveWithFixedSize(workspace, moveDirection, movePx) {
             y = geom.y + movePx;
         } else {
             print("Please choose a move direction between 'left', 'right', 'up' and 'down'");
+            return;
         }
         new_xy = ensureWithinVisibleArea(client, geom.width, geom.height, geom.width, geom.height, x, y);
         reposition(client, new_xy.x, new_xy.y, geom.width, geom.height);
