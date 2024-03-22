@@ -1,0 +1,2 @@
+package_name="ultrawidewindows"
+package_archive="${package_name}.kwinscript"

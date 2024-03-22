@@ -1,3 +1,3 @@
 #!/bin/sh
-qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.showInteractiveKWinConsole
-
+# https://develop.kde.org/docs/plasma/kwin/
+plasma-interactiveconsole --kwin
