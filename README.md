@@ -60,6 +60,12 @@ My suggestion is to use the following configuration:
 | <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>shift</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to fit left-height 3/4 width</kbd>   |
 | <kbd>ctrl</kbd> + <kbd>Meta</kbd> + <kbd>shift</kbd> + <kbd>Numpad9</kbd> | <kbd>UltrawideWindows: Move Window to fit right-height 3/4 width</kbd>  |
 
+| Shortcuts                                             | Commands in 1x3 grid (useful for vertical monitors)            |
+| ----------------------------------------------------- | -------------------------------------------------------------- |
+| <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>Numpad8</kbd> | <kbd>UltrawideWindows: Move Window to up (1x3)</kbd>           |
+| <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>Numpad5</kbd> | <kbd>UltrawideWindows: Move Window to center (1x3)</kbd>       |
+| <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>Numpad2</kbd> | <kbd>UltrawideWindows: Move Window to down (1x3)</kbd>         |
+
 | Shortcuts                           | Commands to fit 2/3 of the width                                       |
 | ----------------------------------- | ---------------------------------------------------------------------- |
 | <kbd>alt</kbd> + <kbd>Numpad7</kbd> | <kbd>UltrawideWindows: Move Window to fit up-left 2/3 width</kbd>      |
