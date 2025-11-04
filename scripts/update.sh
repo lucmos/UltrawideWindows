@@ -16,7 +16,7 @@ dbus-send --type=signal --dest=org.kde.KWin /KWin org.kde.KWin.reloadConfig
 # command below doesn't work and the script doesn't activate.
 # Seems like 1 sec sleep is enough
 sleep 1
-loaded=$(qdbus org.kde.KWin /Scripting org.kde.kwin.Scripting.loadScript "${package_name}")
+loaded=$(${QDBUS_CMD} org.kde.KWin /Scripting org.kde.kwin.Scripting.loadScript "${package_name}")
 if [ "${loaded}" -ne 1 ]; then
   echo >&2 "Failed to load ${package_name}. Try to logout and login again"
   exit 1
@@ -24,4 +24,4 @@ fi
 
 # Reload the configuration and make the shortcuts appear in the kglobalshortcutsrc
 # without having to logout and log back in
-qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.cleanUp > /dev/null
+${QDBUS_CMD} org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.cleanUp > /dev/null

@@ -1,2 +1,13 @@
 package_name="ultrawidewindows"
 package_archive="${package_name}.kwinscript"
+
+# Choose qdbus command. Normally this is 'qdbus', but on Debian 13 it's 'qdbus6'
+QDBUS_CMD="qdbus"
+if [ -r /etc/os-release ]; then
+  . /etc/os-release
+  if [ "${ID}" = "debian" ] && [ "${VERSION_ID}" = "13" ]; then
+    if command -v qdbus6 >/dev/null 2>&1; then
+      QDBUS_CMD="qdbus6"
+    fi
+  fi
+fi
